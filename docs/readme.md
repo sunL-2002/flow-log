@@ -1,4 +1,5 @@
 # 项目结构
+```text
 flow-log/
 ├── src-tauri/                    # Tauri Rust 后端
 │   ├── src/
@@ -35,6 +36,7 @@ flow-log/
 ├── package.json
 ├── tailwind.config.js
 └── vite.config.ts
+```
 
 # 安装依赖
 npm install
