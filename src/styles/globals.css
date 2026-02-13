@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-100: #E8F2FC;
+  --color-primary-500: #4A90D9;
+  --color-primary-700: #2E6BB0;
+  
+  --color-coding: #4CAF50;
+  --color-meeting: #F44336;
+  --color-communication: #FFC107;
+  --color-learning: #9C27B0;
+  --color-rest: #03A9F4;
+  --color-other: #FF9800;
+  --color-unknown: #9E9E9E;
+  
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-border: #E0E0E0;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+}
+
+.dark {
+  --color-bg: #1E1E1E;
+  --color-surface: #2D2D2D;
+  --color-border: #404040;
+  --color-text-primary: #E0E0E0;
+  --color-text-secondary: #9E9E9E;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+.activity-coding { color: var(--color-coding); }
+.activity-meeting { color: var(--color-meeting); }
+.activity-communication { color: var(--color-communication); }
+.activity-learning { color: var(--color-learning); }
+.activity-rest { color: var(--color-rest); }
+.activity-other { color: var(--color-other); }
+.activity-unknown { color: var(--color-unknown); }
+
+.bg-activity-coding { background-color: var(--color-coding); }
+.bg-activity-meeting { background-color: var(--color-meeting); }
+.bg-activity-communication { background-color: var(--color-communication); }
+.bg-activity-learning { background-color: var(--color-learning); }
+.bg-activity-rest { background-color: var(--color-rest); }
+.bg-activity-other { background-color: var(--color-other); }
+.bg-activity-unknown { background-color: var(--color-unknown); }
